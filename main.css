@@ -12,3 +12,34 @@ main {
 li {
     margin-bottom: 5px;
 }
+
+/* using only to prevent older browsers applying selected styles: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Syntax */
+@media only screen and (max-width: 375px) {
+  body {
+    border: 1em solid red; 
+  }
+}
+ 
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  body {
+    border: 1em solid blue;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  body {
+    border: 1em solid green;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    border: 1em solid yellow;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    border: 1em solid hotpink;
+  }
+}
